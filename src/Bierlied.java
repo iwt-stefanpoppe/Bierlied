@@ -24,14 +24,7 @@ public class Bierlied {
 
     private static String wortAuswahl(int anzahl) {
 
-        String wort;
-
-        if (anzahl == 1) {
-            wort = "Flasche";
-        } else {
-            wort = "Flaschen";
-        }
-        return wort;
+        return (anzahl == 1) ? "Flasche" : "Flaschen";
 
     }
 }
