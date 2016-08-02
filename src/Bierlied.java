@@ -8,23 +8,30 @@ public class Bierlied {
 
         while (anzahl > 0) {
 
-            if (anzahl == 1) {
-                wort = "Flasche";
-            }
-
-            System.out.println(anzahl + " " + wort + " Bier auf der Wand,");
-            System.out.println(anzahl + " " + wort + " Bier, ");
+            System.out.println(anzahl + " " + wortAuswahl(anzahl) + " Bier auf der Wand,");
+            System.out.println(anzahl + " " + wortAuswahl(anzahl) + " Bier, ");
             System.out.println("Nimm eine runter, reich sie herum,");
             anzahl--;
 
             if (anzahl > 0) {
-                System.out.println(anzahl + " " + wort + " Bier auf der Wand!");
-            }
-
-            else{
-                System.out.println("Es ist keine " + wort + " Bier mehr auf der Wand!" );
+                System.out.println(anzahl + " " + wortAuswahl(anzahl) + " Bier auf der Wand!");
+            } else {
+                System.out.println("Es ist keine " + wortAuswahl(anzahl) + " Bier mehr auf der Wand!");
             }
         }
+
+    }
+
+    private static String wortAuswahl(int anzahl) {
+
+        String wort;
+
+        if (anzahl == 1) {
+            wort = "Flasche";
+        } else {
+            wort = "Flaschen";
+        }
+        return wort;
 
     }
 }
