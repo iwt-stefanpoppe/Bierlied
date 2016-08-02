@@ -10,16 +10,20 @@ public class Bierlied {
 
             if (anzahl == 1) {
                 wort = "Flasche";
-            } else {
-                System.out.println(anzahl + " " + wort + " Bier an der Wand,");
-                System.out.println(anzahl + " " + wort + " Bier, ");
-                System.out.println("Nimm eine runter, reich sie herum,");
-                anzahl--;
-
-                if (anzahl > 0)
-                    System.out.println(anzahl + " " + wort + " Bier an der Wand!");
             }
 
+            System.out.println(anzahl + " " + wort + " Bier auf der Wand,");
+            System.out.println(anzahl + " " + wort + " Bier, ");
+            System.out.println("Nimm eine runter, reich sie herum,");
+            anzahl--;
+
+            if (anzahl > 0) {
+                System.out.println(anzahl + " " + wort + " Bier auf der Wand!");
+            }
+
+            else{
+                System.out.println("Es ist keine " + wort + " Bier mehr auf der Wand!" );
+            }
         }
 
     }
